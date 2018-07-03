@@ -1,0 +1,187 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+   >
+<RelativeLayout
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:background="@drawable/title_bar"
+    android:layout_alignParentTop="true"
+    android:layout_height="wrap_content">
+
+</RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/openscreenlock1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/pati" >
+
+            <TextView
+                android:id="@+id/text_en"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/enable_zipper"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                />
+
+
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_locksetting"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="35dp"
+                android:checked="false"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/disablescreenlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/openscreenlock1"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/pati" >
+
+            <TextView
+                android:id="@+id/dis_txt"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/disable_zipper"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                />
+            <ImageView
+                android:id="@+id/dlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/disco"
+                android:contentDescription="@+id/dlock"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/aboutus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pati"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/disablescreenlock">
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/about_us"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                />
+            <ImageView
+                android:id="@+id/info"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/devin"
+                android:contentDescription="@+id/info"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/playicon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pati"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/aboutus">
+
+            <TextView
+                android:id="@+id/moreapps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/more_apps"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                />
+            <ImageView
+                android:id="@+id/plays"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/playicon"
+                android:contentDescription="@+id/plays"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rateus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pati"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/playicon">
+
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/rate_apps"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                />
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/star"
+                android:contentDescription="@+id/star"
+                />
+        </RelativeLayout>
+
+
+
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        android:background="@color/ripple_material_dark"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

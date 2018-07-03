@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">New Year 2017 Zipper Lock</string>
+    <string name="action_settings">Settings</string>
+    <string name="enable_zipper">Enable Lock Screen</string>
+    <string name="disable_zipper">Disable Default Lock</string>
+    <string name="enable_vibra">Enable Viberation</string>
+    <string name="about_us">Developer Intro</string>
+    <string name="more_apps">Our More Apps</string>
+    <string name="rate_apps">Rate This App </string>
+    <string name="time">11:21 am</string>
+    <string name="date">21-sep-15</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-1956797739502472/3794519143</string>
+    <string name="intercitial_ad_unit_id">ca-app-pub-1956797739502472/5271252340</string>
+
+    <string name="title_activity_developerintro">Developer Intro</string>
+    <string name="title_activity_lock_settings">Lock Settings</string>
+</resources>
